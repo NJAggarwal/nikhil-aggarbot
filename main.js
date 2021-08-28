@@ -54,7 +54,7 @@ client.on('guildMemberAdd', guildMember =>{
         + ` to familiarise yourself with the server manual: information on what this server is about, how to navigate this server`
         + ` & how you can benefit from this server in many ways possible. If you are still unsure on how to navigate the server, or`
         + ` have any more questions, please do not hesitate to get in touch with me on the server via pinging me on either:`
-        + ` <@${'694980723114770513'}>, <@&${'874531365935271946'}>; or sending me a direct message.`)
+        + ` @Nikhil Aggarwal, @King👑; or sending me a direct message.`)
 
     } else if (guildMember.guild.id === '786260531916832798'){
            
@@ -67,8 +67,8 @@ client.on('guildMemberAdd', guildMember =>{
         + ` to familiarise yourself with the server manual: information on what this server is about, how to navigate this server`
         + ` & how you can benefit from this server in many ways possible. If you are still unsure on how to navigate the server, or`
         + ` have any more questions, please do not hesitate to get in touch with me on the server via pinging me on either:`
-        + ` <@${'694980723114770513'}>, <@&${'874536201883877456'}>; or sending me a direct message; or reaching out to any other`
-        + ` available <@&${'786260531916832801'}>.`)
+        + ` @Nikhil Aggarwal, @King👑; or sending me a direct message; or reaching out to any other`
+        + ` available Moderator.`)
 
     } else if (guildMember.guild.id === '855360915221774366'){
            
@@ -81,8 +81,8 @@ client.on('guildMemberAdd', guildMember =>{
         + ` to familiarise yourself with the server manual: information on what this server is about, how to navigate this server`
         + ` & how you can benefit from this server in many ways possible. If you are still unsure on how to navigate the server, or`
         + ` have any more questions, please do not hesitate to get in touch with me on the server via pinging me on either:`
-        + ` <@${'694980723114770513'}>, <@&${'879677848426778635'}>; or sending me a direct message; or reaching out to any other`
-        + ` available <@&${'855360915234619413'}>.`)
+        + ` @Nikhil Aggarwal, @King👑; or sending me a direct message; or reaching out to any other`
+        + ` available Moderator.`)
 
     } else if (guildMember.guild.id === '875621155510321183'){
 
@@ -91,8 +91,8 @@ client.on('guildMemberAdd', guildMember =>{
         + ` to familiarise yourself with the server manual: information on what this server is about, how to navigate this server`
         + ` & how you can benefit from this server in many ways possible. If you are still unsure on how to navigate the server, or`
         + ` have any more questions, please do not hesitate to get in touch with me on the server via pinging me on either:`
-        + ` <@${'694980723114770513'}>, <@&${'878289360963928125'}>; or sending me a direct message; or reaching out to any other`
-        + ` available <@&${'875621155959095328'}>.`)
+        + ` @Nikhil Aggarwal, @King👑; or sending me a direct message; or reaching out to any other`
+        + ` available Moderator.`)
 
     }
 });
