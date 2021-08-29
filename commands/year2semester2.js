@@ -17,6 +17,7 @@ module.exports ={
         const MATH20712Role = message.guild.roles.cache.find(role=>role.name === "MATH20712");
         const MATH20722Role = message.guild.roles.cache.find(role=>role.name === "MATH20722");
         const MATH20802Role = message.guild.roles.cache.find(role=>role.name === "MATH20802");
+        const MATH20902Role = message.guild.roles.cache.find(role=>role.name === "MATH20902");
         const MATH20912Role = message.guild.roles.cache.find(role=>role.name === "MATH20912");
         const MATH20962Role = message.guild.roles.cache.find(role=>role.name === "MATH20962");
         const MATH20972Role = message.guild.roles.cache.find(role=>role.name === "MATH20972");
@@ -34,9 +35,10 @@ module.exports ={
         const MATH20712Emoji = '🇰';
         const MATH20722Emoji = '🇱';
         const MATH20802Emoji = '🇲';
-        const MATH20912Emoji = '🇳';
-        const MATH20962Emoji = '🇴';
-        const MATH20972Emoji = '🇵';
+        const MATH20902Emoji = '🇳';
+        const MATH20912Emoji = '🇴';
+        const MATH20962Emoji = '🇵';
+        const MATH20972Emoji = '🇶';
 
 
         let embed = new Discord.MessageEmbed()
@@ -56,6 +58,7 @@ module.exports ={
             + `${MATH20712Emoji} MATH20712 - Random Models \n\n`
             + `${MATH20722Emoji} MATH20722 - Foundations of Modern Probability \n\n`
             + `${MATH20802Emoji} MATH20802 - Statistical Methods \n\n`
+            + `${MATH20902Emoji} MATH20902 - Discrete Mathematics \n\n`
             + `${MATH20912Emoji} MATH20912 - Introduction to Financial Mathematics \n\n`
             + `${MATH20962Emoji} MATH20962 - Contingencies 1 - Actuarial Science \n\n`
             + `${MATH20972Emoji} MATH20972 - Actuarial Insurance`);
@@ -74,6 +77,7 @@ module.exports ={
         messageEmbed.react(MATH20712Emoji);
         messageEmbed.react(MATH20722Emoji);
         messageEmbed.react(MATH20802Emoji);
+        messageEmbed.react(MATH20902Emoji);
         messageEmbed.react(MATH20912Emoji);
         messageEmbed.react(MATH20962Emoji);
         messageEmbed.react(MATH20972Emoji);
@@ -138,6 +142,10 @@ module.exports ={
                     await reaction.message.guild.members.cache.get(user.id).roles.add(SEMESTER2Role);
                     await reaction.message.guild.members.cache.get(user.id).roles.add(MATH20802Role);
                 }
+                if(reaction.emoji.name === MATH20902Emoji){
+                    await reaction.message.guild.members.cache.get(user.id).roles.add(SEMESTER2Role);
+                    await reaction.message.guild.members.cache.get(user.id).roles.add(MATH20902Role);
+                }
                 if(reaction.emoji.name === MATH20912Emoji){
                     await reaction.message.guild.members.cache.get(user.id).roles.add(SEMESTER2Role);
                     await reaction.message.guild.members.cache.get(user.id).roles.add(MATH20912Role);
@@ -200,6 +208,9 @@ module.exports ={
                 }
                 if(reaction.emoji.name === MATH20802Emoji){
                     await reaction.message.guild.members.cache.get(user.id).roles.remove(MATH20802Role);
+                }
+                if(reaction.emoji.name === MATH20902Emoji){
+                    await reaction.message.guild.members.cache.get(user.id).roles.add(MATH20902Role);
                 }
                 if(reaction.emoji.name === MATH20912Emoji){
                     await reaction.message.guild.members.cache.get(user.id).roles.remove(MATH20912Role);
