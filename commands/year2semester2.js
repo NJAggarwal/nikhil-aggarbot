@@ -210,7 +210,7 @@ module.exports ={
                     await reaction.message.guild.members.cache.get(user.id).roles.remove(MATH20802Role);
                 }
                 if(reaction.emoji.name === MATH20902Emoji){
-                    await reaction.message.guild.members.cache.get(user.id).roles.add(MATH20902Role);
+                    await reaction.message.guild.members.cache.get(user.id).roles.remove(MATH20902Role);
                 }
                 if(reaction.emoji.name === MATH20912Emoji){
                     await reaction.message.guild.members.cache.get(user.id).roles.remove(MATH20912Role);
