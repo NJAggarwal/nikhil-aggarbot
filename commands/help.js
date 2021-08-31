@@ -15,8 +15,12 @@ module.exports ={
         let help = new Discord.MessageEmbed()
         .setColor('#9B59B6')
         .setTitle(`**                                                   Nikhil Aggarbot Help** \n\n`)
-        .setDescription(`\n\n**-------------------------------------| MODULE ROLES |-------------------------------------** \n\n`
-        + `To obtain access to your module roles & channels, please react with the appropriate emoji on the #add-modules channels. \n\n`
+        .setDescription(`\n\n**-----------------------------| DEGREE PROGRAMME ROLES |-----------------------------** \n\n`
+        + 'To get a degree programme role please follow the instructions given on #select-degree channels (n.b. this only applies to:'
+        + ' UoM Maths 1st, 2nd & 3rd Year (Unofficial) Discord Servers; UoM Maths FY (Unofficial) Discord Server does not have' 
+        + ' this option, but you can #add-department using that channel!) \n\n'
+        + `**-------------------------------------| MODULE ROLES |-------------------------------------** \n\n`
+        + `To obtain access to your module roles & channels, please follow the instructions given on the #add-modules channels. \n\n`
         + `**---------------------------------------| COMMANDS |---------------------------------------** \n\n`
         + "To use a command please type in `$(insert command name here)`. The commands available are the following: \n\n"
         + "**1. ask** - Useful if you would like to ask a simple yes/no question; or run a simple poll. \n\n"

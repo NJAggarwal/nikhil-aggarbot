@@ -4,9 +4,9 @@ const TicTacToe = require('discord-tictactoe');
 
 const client = new Discord.Client({partials:["MESSAGE", "CHANNEL", "REACTION"]});
 
-//const { token, prefix } = require('./config.json');
+const { token, prefix } = require('./config.json');
 
-const prefix = process.env.NIKHILAGGARBOT_PREFIX
+//const prefix = process.env.NIKHILAGGARBOT_PREFIX
 
 const csv = require('csv-parser');
 
@@ -98,12 +98,32 @@ client.on('guildMemberAdd', guildMember =>{
 });
 
 client.on('message', message =>{
-    if(!message.content.startsWith(prefix) || message.author.bot) return;
+
+    //radarChannels in order of moduleslist.js
+    radarChannels = ['855396707387179018', '880360739259445308', '854303604226523147',
+        '854299696415899648', '854299865878364160', '854084829301833778', '854084934364430426',
+        '880740835111628820', '880732668680081439', '875754076313378866', '875638848321888296',
+        '875639302703415307']
 
     const args = message.content.slice(prefix.length).split(/ +/);
     const command = args.shift().toLowerCase();
 
     const cmd = client.commands.get(command) || client.commands.find((a => a.aliases && a.aliases.includes(command)));
+
+    if (radarChannels.includes(message.channel.id)){
+        if(!message.content.startsWith(prefix)){
+            message.react('❌');
+            setTimeout(() => message.delete(), 500);
+            return;
+        }
+        if(cmd != 'add' || cmd != 'rem'){
+            message.react('❌')
+            setTimeout(() => message.delete(), 500);
+            return;
+        }
+    }
+    
+    if(!message.content.startsWith(prefix) || message.author.bot) return;
 
     try{
         cmd.execute(message, args, command, ChannelIds, Discord, client);
@@ -121,4 +141,4 @@ catch(err){
     message.reply("There was an error trying to execute this command!");
     }
 
-client.login(process.env.NIKHILAGGARBOT_TOKEN);
+client.login(token);
