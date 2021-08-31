@@ -790,12 +790,13 @@ module.exports ={
                         await member.roles.add(MATH10111Role);
                         await member.roles.add(MATH10131Role);
                         await member.roles.add(MATH10141Role);
+                        await member.roles.add(MATH10951Role);
                         await member.roles.add(Y2SEMESTER2Role);
                         await member.roles.add(MATH10212Role);
                         await member.roles.add(MATH10232Role);
                         await member.roles.add(MATH10242Role);
                         await member.roles.add(MATH10282Role);
-                        await member.roles.add(MATH10951Role);
+                        
                     }
                     if (moduleChoices[i] === ComputerScienceAndMathematicsPassword){
                         await member.roles.add(ComputerScienceAndMathematicsRole);

@@ -653,8 +653,8 @@ module.exports ={
             const MATH10141Role = message.guild.roles.cache.find(role=>role.name === "MATH10141");
             const MATH10951Role = message.guild.roles.cache.find(role=>role.name === "MATH10951");
 
-            //FIND YEAR 2 SEMESTER 2 MODULE ROLES
-            const Y2SEMESTER2Role = message.guild.roles.cache.find(role=>role.name === "═════╣ SEMESTER 2 ╠═════");
+            //FIND YEAR 1 SEMESTER 2 MODULE ROLES
+            const Y1SEMESTER2Role = message.guild.roles.cache.find(role=>role.name === "═════╣ SEMESTER 2 ╠═════");
             const MATH10202Role = message.guild.roles.cache.find(role=>role.name === "MATH10202");
             const MATH10212Role = message.guild.roles.cache.find(role=>role.name === "MATH10212");
             const MATH10222Role = message.guild.roles.cache.find(role=>role.name === "MATH10222");
@@ -684,6 +684,7 @@ module.exports ={
                         await member.roles.remove(MATH10101Role);
                         await member.roles.remove(MATH10121Role);
                         await member.roles.remove(MATH10141Role);
+                        await member.roles.remove(Y1SEMESTER2Role);
                         await member.roles.remove(MATH10202Role);
                         await member.roles.remove(MATH10222Role);
                         await member.roles.remove(MATH10242Role);
@@ -696,6 +697,7 @@ module.exports ={
                         await member.roles.remove(MATH10101Role);
                         await member.roles.remove(MATH10121Role);
                         await member.roles.remove(MATH10141Role);
+                        await member.roles.remove(Y1SEMESTER2Role);
                         await member.roles.remove(MATH10202Role);
                         await member.roles.remove(MATH10222Role);
                         await member.roles.remove(MATH10242Role);
@@ -706,6 +708,7 @@ module.exports ={
                         await member.roles.remove(Y1SEMESTER1Role);
                         await member.roles.remove(MATH10111Role);
                         await member.roles.remove(MATH10121Role);
+                        await member.roles.remove(Y1SEMESTER2Role);
                         await member.roles.remove(MATH10212Role);
                         await member.roles.remove(MATH11222Role);
                     }
@@ -716,6 +719,7 @@ module.exports ={
                         await member.roles.remove(MATH10101Role);
                         await member.roles.remove(MATH10121Role);
                         await member.roles.remove(MATH10141Role);
+                        await member.roles.remove(Y1SEMESTER2Role);
                         await member.roles.remove(MATH10202Role);
                         await member.roles.remove(MATH10222Role);
                         await member.roles.remove(MATH10242Role);
@@ -728,6 +732,7 @@ module.exports ={
                         await member.roles.remove(MATH10111Role);
                         await member.roles.remove(MATH10131Role);
                         await member.roles.remove(MATH10141Role);
+                        await member.roles.remove(Y1SEMESTER2Role);
                         await member.roles.remove(MATH10212Role);
                         await member.roles.remove(MATH10232Role);
                         await member.roles.remove(MATH10242Role);
@@ -739,17 +744,20 @@ module.exports ={
                         await member.roles.remove(MATH10111Role);
                         await member.roles.remove(MATH10131Role);
                         await member.roles.remove(MATH10141Role);
+                        await member.roles.remove(MATH10951Role);
+                        await member.roles.remove(Y1SEMESTER2Role);
                         await member.roles.remove(MATH10212Role);
                         await member.roles.remove(MATH10232Role);
                         await member.roles.remove(MATH10242Role);
                         await member.roles.remove(MATH10282Role);
-                        await member.roles.remove(MATH10951Role);
+                        
                     }
                     if (moduleChoices[i] === ComputerScienceAndMathematicsPassword){
                         await member.roles.remove(ComputerScienceAndMathematicsRole);
                         await member.roles.remove(Y1SEMESTER1Role);
                         await member.roles.remove(MATH10111Role);
                         await member.roles.remove(MATH10131Role);
+                        await member.roles.remove(Y1SEMESTER2Role);
                         await member.roles.remove(MATH10212Role);
                         await member.roles.remove(MATH10232Role);
                     }
@@ -758,6 +766,7 @@ module.exports ={
                         await member.roles.remove(Y1SEMESTER1Role);
                         await member.roles.remove(MATH10111Role);
                         await member.roles.remove(MATH10131Role);
+                        await member.roles.remove(Y1SEMESTER2Role);
                         await member.roles.remove(MATH10212Role);
                         await member.roles.remove(MATH10232Role);
                     }
