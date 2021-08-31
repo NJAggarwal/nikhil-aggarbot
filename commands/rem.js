@@ -605,6 +605,7 @@ module.exports ={
 
             //YEAR 2 OUTSIDE MODULES CHECKS
             if (message.channel.id === Y2OutsideModulesChannel){
+                let i = 0
                 do{
                     if(moduleChoices[i] === Y2PhysPassword){
                         await member.roles.remove(Y2PhysRole);
