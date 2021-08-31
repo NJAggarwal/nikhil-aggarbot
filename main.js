@@ -116,11 +116,6 @@ client.on('message', message =>{
             setTimeout(() => message.delete(), 500);
             return;
         }
-        if(cmd != 'add' || cmd != 'rem'){
-            message.react('❌')
-            setTimeout(() => message.delete(), 500);
-            return;
-        }
     }
     
     if(!message.content.startsWith(prefix) || message.author.bot) return;
