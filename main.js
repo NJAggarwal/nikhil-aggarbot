@@ -4,9 +4,9 @@ const TicTacToe = require('discord-tictactoe');
 
 const client = new Discord.Client({partials:["MESSAGE", "CHANNEL", "REACTION"]});
 
-const { token, prefix } = require('./config.json');
+//const { token, prefix } = require('./config.json');
 
-//const prefix = process.env.NIKHILAGGARBOT_PREFIX
+const prefix = process.env.NIKHILAGGARBOT_PREFIX
 
 const csv = require('csv-parser');
 
@@ -141,4 +141,4 @@ catch(err){
     message.reply("There was an error trying to execute this command!");
     }
 
-client.login(token);
+client.login(process.env.NIKHILAGGARBOT_TOKEN);
