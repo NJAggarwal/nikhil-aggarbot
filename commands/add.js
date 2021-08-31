@@ -352,7 +352,7 @@ module.exports ={
                         await member.roles.add(MATH39542Role)
                     }
                     i = i + 1
-                } while (i < moduleChoices + 1)
+                } while (i < moduleChoices.length + 1)
             }
 
             //YEAR 3 OUTSIDE MODULES CHECKS
