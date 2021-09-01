@@ -18,11 +18,10 @@ module.exports ={
             let embed = new Discord.MessageEmbed()
                 .setColor('#9B59B6')
                 .setTitle('Choose your degree programme')
-                .setDescription('Messaging the emoji name into the channel will make it easier for you to meet others'
+                .setDescription('Messaging `$add (emoji name)` into the channel will make it easier for you to meet others'
                 + ' on the same degree programme: by giving you access to your programme channel. It will also give'
-                + ' you access to your module channels. \n\n'
-                + 'To get a degree programme role, please message `$add (emoji name)` into the channel.'
-                + ' To remove a degree programme role, please message: `$rem (emoji name)` into the channel. \n\n'
+                + ' you access to your module channels. To remove a degree programme role, please message:'
+                + ' `$rem (emoji name)` into the channel. \n\n'
                 + `${MathematicsEmoji} BSc/MMath Mathematics \n\n`
                 + `${MathematicsAndStatisticsEmoji} BSc/MMath Mathematics & Statistics \n\n`
                 + `${MathematicsAndPhysicsEmoji} BSc/MMath&Phys Mathematics & Physics \n\n`
@@ -51,9 +50,8 @@ module.exports ={
             let embed = new Discord.MessageEmbed()
                 .setColor('#9B59B6')
                 .setTitle('Choose your degree programme')
-                .setDescription('Messaging the emoji name into the channel will make it easier for you to meet others'
-                + ' on the same degree programme and where approprtiate will give you access to joint honours channels. \n\n'
-                + 'To get a degree programme role, please message `$add (emoji name)` into the channel.'
+                .setDescription('Messaging `$add (emoji name)` into the channel will make it easier for you to meet others'
+                + ' on the same degree programme and where approprtiate will give you access to joint honours channel.'
                 + ' To remove a degree programme role, please message: `$rem (emoji name)` into the channel. \n\n'
                 + `${MathematicsEmoji} BSc/MMath Mathematics \n\n`
                 + `${MathematicsAndStatisticsEmoji} BSc/MMath Mathematics & Statistics \n\n`
