@@ -12,11 +12,15 @@ module.exports ={
         //UoM MATHS 3RD YEAR (UNOFFICIAL) DISCORD SERVER
         if (message.guild.id === '769144748111167489'){
 
-            //DECLARE YEAR 3 DEGREE, SEMESTER & OUTSIDE CHANNELS
+            //DECLARE YEAR 3 ADD SOCIALS ROLE, DEGREE, SEMESTER & OUTSIDE CHANNELS
+            const Y3AddSocialsRoleChannel = '882631817021255730';
             const Y3SelectDegreeChannel = '854303604226523147';
             const Y3OutsideModulesChannel = '880732668680081439';
             const Y3Semester1Channel = '854299696415899648';
             const Y3Semester2Channel = '854299865878364160';
+
+            //FIND YEAR 3 SOCIALS ROLE
+            const Y3SocialsRole = message.guild.roles.cache.find(role=>role.name === "Socials");
 
             //FIND YEAR 3 DEGREE PROGRAMME ROLES
             const Y3MathematicsRole = message.guild.roles.cache.find(role=>role.name === "Maths");
@@ -153,6 +157,18 @@ module.exports ={
             const Y3CompPassword = 'computer';
             const Y3PhilPassword = 'thinking';
             const Y3LangPassword = 'map';
+
+            //YEAR 3 SOCIALS ROLE CHECKS
+            if (message.channel.id === Y3AddSocialsRoleChannel) {
+
+                let i = 0
+                do {
+                    if (moduleChoices[i] === 'socials') {
+                        await member.roles.remove(Y3SocialsRole);
+                    }
+                    i = i + 1
+                } while (i < moduleChoices.length + 1)
+            }
 
             //YEAR 3 DEGREE PROGRAMME CHECKS
             if (message.channel.id === Y3SelectDegreeChannel){
@@ -355,11 +371,15 @@ module.exports ={
         //UoM MATHS 2ND YEAR (UNOFFICIAL) DISCORD SERVER
         if (message.guild.id === '786260531916832798'){
 
-            //DECLARE YEAR 2 DEGREE, SEMESTER & OUTSIDE CHANNELS
+            //DECLARE YEAR 2 ADD SOCAILS ROLE, DEGREE, SEMESTER & OUTSIDE CHANNELS
+            const Y2AddSocialsRoleChannel = '882632171217633300';
             const Y2SelectDegreeChannel = '880360739259445308';
             const Y2Semester1Channel = '854084829301833778';
             const Y2Semester2Channel = '854084934364430426';
             const Y2OutsideModulesChannel = '880740835111628820';
+
+            //FIND YEAR 2 SOCIALS ROLE
+            const Y2SocialsRole = message.guild.roles.cache.find(role=>role.name === "Socials");
 
             //FIND YEAR 2 DEGREE PROGRAMME ROLES
             const Y2MathematicsRole = message.guild.roles.cache.find(role=>role.name === "Maths");
@@ -468,6 +488,18 @@ module.exports ={
             const Y2CompPassword = 'computer';
             const Y2PhilPassword = 'thinking';
             const Y2LangPassword = 'map';
+
+            //YEAR 2 SOCIALS ROLE CHECKS
+            if (message.channel.id === Y2AddSocialsRoleChannel) {
+
+                let i = 0
+                do {
+                    if (moduleChoices[i] === 'socials') {
+                        await member.roles.remove(Y2SocialsRole);
+                    }
+                    i = i + 1
+                } while (i < moduleChoices.length + 1)
+            }
 
             //YEAR 2 DEGREE PROGRAMME CHECKS
             if (message.channel.id === Y2SelectDegreeChannel){
@@ -630,8 +662,12 @@ module.exports ={
         //UoM MATHS 1ST YEAR (UNOFFICIAL) DISCORD SERVER
         if (message.guild.id === '855360915221774366'){
 
-            //DECLARE 1ST YEARS SELECT DEGREE CHANNEL
+            //DECLARE 1ST YEARS ADD SOCIALS ROLE & SELECT DEGREE CHANNEL
+            const Y1AddSocialsRoleChannel = '882632897029341214';
             const Y1Channel = '855396707387179018';
+            
+            //FIND YEAR 1 SOCIALS ROLE
+            const Y1SocialsRole = message.guild.roles.cache.find(role => role.name === "Socials");
 
             //FIND Y1 DEGREE PROGRAMME ROLES
             const MathematicsRole = message.guild.roles.cache.find(role=>role.name === "Maths");
@@ -672,6 +708,18 @@ module.exports ={
             const ActuarialScienceAndMathematicsPassword = 'moneybag';
             const ComputerScienceAndMathematicsPassword = 'computer';
             const MathematicsAndPhilosphyPassword = 'thinking';
+
+            //YEAR 1 SOCIALS ROLE CHECKS
+            if (message.channel.id === Y1AddSocialsRoleChannel) {
+
+                let i = 0
+                do {
+                    if (moduleChoices[i] === 'socials') {
+                        await member.roles.remove(Y1SocialsRole);
+                    }
+                    i = i + 1
+                } while (i < moduleChoices.length + 1)
+            }
 
             //YEAR 1 CHECKS
             if(message.channel.id === Y1Channel){
@@ -777,10 +825,14 @@ module.exports ={
         //UoM MATHS FOUNDATION YEAR (UNOFFICAL) DISCORD SERVER
         if (message.guild.id === '875621155510321183'){
 
-            //DECLARE FOUNDATION YEAR DEPARTMENT & SEMESTER CHANNELS
-            const removeDepartmentChannel = '875754076313378866';
+            //DECLARE FOUNDATION YEAR ADD SOCIALS ROLE, DEPARTMENT & SEMESTER CHANNELS
+            const FyAddSocialsRoleChannel = '882633171072593961';
+            const AddDepartmentChannel = '875754076313378866';
             const FySemester1Channel = '875638848321888296';
             const FySemester2Channel = '875639302703415307';
+
+            //FIND FOUNDATION YEAR SOCIALS ROLE
+            const FySocialsRole = message.guild.roles.cache.find(role => role.name === "Socials");
 
             //FIND DEPARTMENT ROLES
             const DoMathematics_Role = message.guild.roles.cache.find(role=>role.name === "DoMathematics");
@@ -836,9 +888,21 @@ module.exports ={
             const MATH19842Letter = 'C';
             const MATH19852Letter = 'D';
             const MATH19872Letter = 'E';
-          
+                
+            //FOUNDATION YEAR SOCIALS ROLE CHECKS
+            if (message.channel.id === FyAddSocialsRoleChannel) {
+
+                let i = 0
+                do {
+                    if (moduleChoices[i] === 'socials') {
+                        await member.roles.remove(FySocialsRole);
+                    }
+                    i = i + 1
+                } while (i < moduleChoices.length + 1)
+            }
+
             //DEPARTMENT CHECKS
-            if (message.channel.id === removeDepartmentChannel){
+            if (message.channel.id === AddDepartmentChannel){
                 let i = 0
                 do{
                     if (moduleChoices[i] === DoMathematics_Password){
