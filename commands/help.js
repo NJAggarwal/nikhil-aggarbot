@@ -21,8 +21,8 @@ module.exports ={
         + ' this option, but you can #add-department using that channel!). \n\n'
         + 'To remove a degree programme, or department role, simply message: `$rem (emoji name)` into the channel.\n\n'
         + `**-------------------------------------| MODULE ROLES |-------------------------------------** \n\n`
-        + 'To obtain access to your module roles & channels, please message `$add (relevant letter)` into the #add-modules channels. Made a mistake?'
-        + ' Changed modules? No problem, please message `$rem (Relevant Letter)` to remove those roles.\n\n'
+        + 'To obtain access to your module roles & channels, please message `$add (letter)` into the #add-modules channels. Made a mistake?'
+        + ' Changed modules? No problem, please message `$rem (letter)` into the channels to remove those roles.\n\n'
         + `**---------------------------------------| COMMANDS |---------------------------------------** \n\n`
         + "To use a command please type in `$(insert command name here)`. The commands available are the following: \n\n"
         + "**1. ask** - Useful if you would like to ask a simple yes/no question; or run a simple poll. \n\n"

@@ -21,6 +21,8 @@ module.exports ={
                 .setDescription('Messaging the emoji name into the channel will make it easier for you to meet others'
                 + ' on the same degree programme: by giving you access to your programme channel. It will also give'
                 + ' you access to your module channels. \n\n'
+                + 'To get a degree programme role, please message `$add (emoji name)` into the channel.'
+                + ' To remove a degree programme role, please message: `$rem (emoji name)` into the channel. \n\n'
                 + `${MathematicsEmoji} BSc/MMath Mathematics \n\n`
                 + `${MathematicsAndStatisticsEmoji} BSc/MMath Mathematics & Statistics \n\n`
                 + `${MathematicsAndPhysicsEmoji} BSc/MMath&Phys Mathematics & Physics \n\n`
@@ -51,6 +53,8 @@ module.exports ={
                 .setTitle('Choose your degree programme')
                 .setDescription('Messaging the emoji name into the channel will make it easier for you to meet others'
                 + ' on the same degree programme and where approprtiate will give you access to joint honours channels. \n\n'
+                + 'To get a degree programme role, please message `$add (emoji name)` into the channel.'
+                + ' To remove a degree programme role, please message: `$rem (emoji name)` into the channel. \n\n'
                 + `${MathematicsEmoji} BSc/MMath Mathematics \n\n`
                 + `${MathematicsAndStatisticsEmoji} BSc/MMath Mathematics & Statistics \n\n`
                 + `${MathematicsAndPhysicsEmoji} BSc/MMath&Phys Mathematics & Physics \n\n`
@@ -86,7 +90,9 @@ module.exports ={
             let embed = new Discord.MessageEmbed()
                 .setColor('#9B59B6')
                 .setTitle('Choose your semester 1 modules!')
-                .setDescription('Messaging the appropriate letter into the channel will give you access to the module channel. \n\n'
+                .setDescription('Messaging `$add (letter)` into the channel will give you' 
+                + ' your module role & access to the module channel. To remove a module role & channel, please'
+                + ' message `$rem (letter)` into the channel. \n\n'
                 + `${MATH30000Emoji} MATH30000 - Double Project \n\n`
                 + `${MATH30011Emoji} MATH30011 - Project (Semester 1) \n\n`
                 + `${MATH32001Emoji} MATH32001 - Group Theory \n\n`
@@ -138,7 +144,9 @@ module.exports ={
         let embed = new Discord.MessageEmbed()
             .setColor('#9B59B6')
             .setTitle('Choose your semester 2 modules!')
-            .setDescription('Messaging the appropriate letter into the channel will give you access to the module channel. \n\n'
+            .setDescription('Messaging `$add (letter)` into the channel will give you' 
+            + ' your module role & access to the module channel. To remove a module role & channel, please'
+            + ' message `$rem (letter)` into the channel. \n\n'
             + `${MATH30002Emoji} MATH30002 - Mathematics Education \n\n`
             + `${MATH30022Emoji} MATH30022 - Project (Semester 2) \n\n`
             + `${MATH31042Emoji} MATH31042 - Fractal Geometry \n\n`
@@ -184,7 +192,9 @@ module.exports ={
             let embed = new Discord.MessageEmbed()
                 .setColor('#9B59B6')
                 .setTitle('Choose your semester 1 modules!')
-                .setDescription('Messaging the appropriate letter into the channel will give you access to the module channel. \n\n'
+                .setDescription('Messaging `$add (letter)` into the channel will give you' 
+                + ' your module role & access to the module channel. To remove a module role & channel, please'
+                + ' message `$rem (letter)` into the channel. \n\n'
                 + `${MATH20101Emoji} MATH20101 - Real Analysis A \n\n`
                 + `${MATH20111Emoji} MATH20111 - Real Analysis B \n\n`
                 + `${MATH20201Emoji} MATH20201 - Algebraic Structures 1 \n\n`
@@ -223,7 +233,9 @@ module.exports ={
             let embed = new Discord.MessageEmbed()
                 .setColor('#9B59B6')
                 .setTitle('Choose your semester 2 modules!')
-                .setDescription('Messaging the appropriate letter into the channel will give you access to the module channel. \n\n'
+                .setDescription('Messaging `$add (letter)` into the channel will give you' 
+                + ' your module role & access to the module channel. To remove a module role & channel, please'
+                + ' message `$rem (letter)` into the channel. \n\n'
                 + `${MATH20062Emoji} MATH20062 - Mathematical Communication & Group Projects \n\n`
                 + `${MATH20122Emoji} MATH20122 - Metric Spaces \n\n`
                 + `${MATH20132Emoji} MATH20132 - Calculus of Several Variables \n\n`
@@ -256,8 +268,9 @@ module.exports ={
             let embed = new Discord.MessageEmbed()
                 .setColor('#9B59B6')
                 .setTitle('Add outside discipline!')
-                .setDescription('Messaging the emoji name into the channel will give you access'
-                + ' to the available joint honours channels. \n\n'
+                .setDescription('Messaging `$add (emoji name)` into the channel will give you access'
+                + ' to the available joint honours channels. To remove, simply message `$rem (emoji name)`' 
+                + ' into the channel.\n\n'
                 + `${physEmoji} PHYS \n\n`
                 + `${bmanEmoji} BMAN \n\n`
                 + `${compEmoji} COMP \n\n`
@@ -283,9 +296,10 @@ module.exports ={
             let embed = new Discord.MessageEmbed()
                 .setColor('#9B59B6')
                 .setTitle('Faculty of Science & Engineering (FSE) - Add your department')
-                .setDescription('Messaging the emoji name into the channel will make it easier for you'
+                .setDescription('Messaging `$add (emoji name)` into the channel will make it easier for you'
                 + ' to meet others in the same department as well as meeting other people from' 
-                + ' other deparments (which I strongly encourage!) \n\n'
+                + ' other deparments (which I strongly encourage!). To remove a department role, simple message: `$rem (emoji name)`' 
+                + ' into the channel.\n\n'
                 + '**School of Natural Sciences (SoNS)** \n\n'
                 + `${DoMathematics_Emoji} Department of Mathematics (DoMathematics) \n\n`
                 + `${DoPaA_Emoji} Department of Physics & Astronomy (DoP&A) \n\n`
@@ -311,7 +325,9 @@ module.exports ={
             let embed = new Discord.MessageEmbed()
                 .setColor('#9B59B6')
                 .setTitle('Choose your semester 1 modules!')
-                .setDescription('Messaging the appropriate letter into the channel will give you access to the module channel. \n\n'
+                .setDescription('Messaging `$add (letter)` into the channel will give you' 
+                + ' your module role & access to the module channel. To remove a module role & channel, please'
+                + ' message `$rem (letter)` into the channel. \n\n'
                 + `${MATH19801Emoji} MATH19801 - 0B1 \n\n`
                 + `${MATH19821Emoji} MATH19821 - 0C1 \n\n`
                 + `${MATH19861Emoji} MATH19861 - 0N1 \n\n`);
@@ -331,7 +347,9 @@ module.exports ={
             let embed = new Discord.MessageEmbed()
                 .setColor('#9B59B6')
                 .setTitle('Choose your semester 2 modules!')
-                .setDescription('Messaging the appropriate letter into the channel will give you access to the module channel. \n\n'
+                .setDescription('Messaging `$add (letter)` into the channel will give you' 
+                + ' your module role & access to the module channel. To remove a module role & channel, please'
+                + ' message `$rem (letter)` into the channel. \n\n'
                 + `${MATH19812Emoji} MATH19812 - 0B2 \n\n`
                 + `${MATH19832Emoji} MATH19832 - 0C2 \n\n`
                 + `${MATH19842Emoji} MATH19842 - 0F2 \n\n`
