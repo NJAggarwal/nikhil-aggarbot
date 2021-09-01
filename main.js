@@ -110,13 +110,13 @@ client.on('message', message =>{
 
     const cmd = client.commands.get(command) || client.commands.find((a => a.aliases && a.aliases.includes(command)));
 
-    //if (radarChannels.includes(message.channel.id)){
-      //  if(!message.content.startsWith(prefix)){
-        //    message.react('❌');
-          //  setTimeout(() => message.delete(), 500);
-            //return;
-        //}
-   // }
+    if (radarChannels.includes(message.channel.id)){
+        if(!message.content.startsWith(prefix)){
+            message.react('❌');
+            setTimeout(() => message.delete(), 500);
+            return;
+        }
+    }
     
     if(!message.content.startsWith(prefix) || message.author.bot) return;
 
