@@ -110,7 +110,8 @@ module.exports ={
         + 'Play tic tac toe with AI or a friend.\n\n'
         + '**Usage** \n'
         + 'To use this command simply type `-ttt` to play with AI, or type `-ttt <@-mentions>` to challenge '
-        + 'a friend.')
+        + 'a friend. \n\n'
+        + '**N.b.** I did not code this! It is a module I have imported which I thought would be good to include.')
 
         if (ChannelIds.includes(message.channel.id)){
             if (messageArgs == ''){
