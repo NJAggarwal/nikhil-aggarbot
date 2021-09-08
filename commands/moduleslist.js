@@ -95,7 +95,7 @@ module.exports ={
                 .setDescription('Messaging `$add Letter Letter Letter...` into the channel will give you' 
                 + ' your module role & access to the module channel. To remove a module role & channel, please'
                 + ' message `$rem Letter Letter Letter...` into the channel. \n\n'
-                + `**N.b.** Messaging $add ${MATH32001Emoji}' '${MATH36001Emoji}' '${MATH36031Emoji}' '... into the channel`
+                + `**N.b.** Messaging $add ${MATH32001Emoji} ${MATH36001Emoji} ${MATH36031Emoji} ... into the channel`
                 + ` will not work! You need to message $add C J K ... \n\n`
                 + `${MATH30000Emoji} MATH30000 - Double Project \n\n`
                 + `${MATH30011Emoji} MATH30011 - Project (Semester 1) \n\n`
@@ -151,7 +151,7 @@ module.exports ={
             .setDescription('Messaging `$add Letter Letter Letter...` into the channel will give you' 
             + ' your module role & access to the module channel. To remove a module role & channel, please'
             + ' message `$rem Letter Letter Letter...` into the channel. \n\n'
-            + `**N.b.** Messaging $add ${MATH30022Emoji}' '${MATH32012Emoji}' '${MATH32072Emoji}' '${MATH36022Emoji}' '... into the channel`
+            + `**N.b.** Messaging $add ${MATH30022Emoji} ${MATH32012Emoji} ${MATH32072Emoji} ${MATH36022Emoji} ... into the channel`
             + ` will not work! You need to message $add B E H N ... \n\n`
             + `${MATH30002Emoji} MATH30002 - Mathematics Education \n\n`
             + `${MATH30022Emoji} MATH30022 - Project (Semester 2) \n\n`
@@ -201,7 +201,7 @@ module.exports ={
                 .setDescription('Messaging `$add Letter Letter Letter...` into the channel will give you' 
                 + ' your module role & access to the module channel. To remove a module role & channel, please'
                 + ' message `$rem Letter Letter Letter...` into the channel. \n\n'
-                + `**N.b.** Messaging $add ${MATH20101Emoji}' '${MATH20201Emoji}' '${MATH20401Emoji}' '... into the channel`
+                + `**N.b.** Messaging $add ${MATH20101Emoji} ${MATH20201Emoji} ${MATH20401Emoji} ... into the channel`
                 + ` will not work! You need to message $add A C D ... \n\n`
                 + `${MATH20101Emoji} MATH20101 - Real Analysis A \n\n`
                 + `${MATH20111Emoji} MATH20111 - Real Analysis B \n\n`
@@ -244,7 +244,7 @@ module.exports ={
                 .setDescription('Messaging `$add Letter Letter Letter...` into the channel will give you' 
                 + ' your module role & access to the module channel. To remove a module role & channel, please'
                 + ' message `$rem Letter Letter Letter...` into the channel. \n\n'
-                + `**N.b.** Messaging $add ${MATH20062Emoji}' '${MATH20122Emoji}' '${MATH20132Emoji}' '... into the channel`
+                + `**N.b.** Messaging $add ${MATH20062Emoji} ${MATH20122Emoji} ${MATH20132Emoji} ... into the channel`
                 + ` will not work! You need to message $add A B C ... \n\n`
                 + `${MATH20062Emoji} MATH20062 - Mathematical Communication & Group Projects \n\n`
                 + `${MATH20122Emoji} MATH20122 - Metric Spaces \n\n`
@@ -342,7 +342,7 @@ module.exports ={
                 .setDescription('Messaging `$add Letter Letter Letter...` into the channel will give you' 
                 + ' your module role & access to the module channel. To remove a module role & channel, please'
                 + ' message `$rem Letter Letter Letter...` into the channel. \n\n'
-                + `**N.b.** Messaging $add ${MATH19801Emoji}' '${MATH19821Emoji}' '${MATH19861Emoji}' '... into the channel`
+                + `**N.b.** Messaging $add ${MATH19801Emoji} ${MATH19821Emoji} ${MATH19861Emoji} ... into the channel`
                 + ` will not work! You need to message $add A B C ... \n\n`
                 + `${MATH19801Emoji} MATH19801 - 0B1 \n\n`
                 + `${MATH19821Emoji} MATH19821 - 0C1 \n\n`
@@ -366,7 +366,7 @@ module.exports ={
                 .setDescription('Messaging `$add Letter Letter Letter...` into the channel will give you' 
                 + ' your module role & access to the module channel. To remove a module role & channel, please'
                 + ' message `$rem Letter Letter Letter...` into the channel. \n\n'
-                + `**N.b.** Messaging $add ${MATH19812Emoji}' '${MATH19832Emoji}' '${MATH19842Emoji}' '... into the channel`
+                + `**N.b.** Messaging $add ${MATH19812Emoji} ${MATH19832Emoji} ${MATH19842Emoji} ... into the channel`
                 + ` will not work! You need to message $add A B C ... \n\n`
                 + `${MATH19812Emoji} MATH19812 - 0B2 \n\n`
                 + `${MATH19832Emoji} MATH19832 - 0C2 \n\n`
