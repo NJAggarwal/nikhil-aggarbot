@@ -23,7 +23,7 @@ module.exports ={
                 + ' you access to your module channels. To remove a degree programme role, please message:'
                 + ' `$rem emoji name` into the channel. \n\n'
                 + `**N.b.** Messaging $add ${MathematicsEmoji} will not work! You need to type in $add nerd.`
-                + ' Please see the description for more guidance.' 
+                + ' Please see the description for more guidance. \n\n' 
                 + `${MathematicsEmoji} BSc/MMath Mathematics \n\n`
                 + `${MathematicsAndStatisticsEmoji} BSc/MMath Mathematics & Statistics \n\n`
                 + `${MathematicsAndPhysicsEmoji} BSc/MMath&Phys Mathematics & Physics \n\n`
@@ -56,7 +56,7 @@ module.exports ={
                 + ' on the same degree programme and where approprtiate will give you access to your joint honours channel.'
                 + ' To remove a degree programme role, please message: `$rem emoji name` into the channel. \n\n'
                 + `**N.b.** Messaging $add ${MathematicsEmoji} will not work! You need to type in $add nerd.`
-                + ' Please see the description for more guidance.' 
+                + ' Please see the description for more guidance. \n\n' 
                 + `${MathematicsEmoji} BSc/MMath Mathematics \n\n`
                 + `${MathematicsAndStatisticsEmoji} BSc/MMath Mathematics & Statistics \n\n`
                 + `${MathematicsAndPhysicsEmoji} BSc/MMath&Phys Mathematics & Physics \n\n`
