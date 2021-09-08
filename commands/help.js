@@ -16,13 +16,13 @@ module.exports ={
         .setColor('#9B59B6')
         .setTitle(`**                                                   Nikhil Aggarbot Help** \n\n`)
         .setDescription(`\n\n**-----------------------------| DEGREE PROGRAMME ROLES |-----------------------------** \n\n`
-        + 'To get a degree programme role, please message `$add (emoji name)` into the #select-degree channels (n.b. this only applies to:'
+        + 'To get a degree programme role, please message `$add emoji name` into the #select-degree channels (n.b. this only applies to:'
         + ' UoM Maths 1st, 2nd & 3rd Year (Unofficial) Discord Servers; UoM Maths FY (Unofficial) Discord Server does not have' 
         + ' this option, but you can #add-department using that channel!). \n\n'
-        + 'To remove a degree programme, or department role, simply message: `$rem (emoji name)` into the channel.\n\n'
+        + 'To remove a degree programme, or department role, simply message: `$rem emoji name` into the channel.\n\n'
         + `**-------------------------------------| MODULE ROLES |-------------------------------------** \n\n`
-        + 'To obtain access to your module roles & channels, please message `$add (letter)` into the #add-modules channels. Made a mistake?'
-        + ' Changed modules? No problem, please message `$rem (letter)` into the channels to remove those roles.\n\n'
+        + 'To obtain access to your module roles & channels, please message `$add Letter Letter Letter...` into the #add-modules channels. Made a mistake?'
+        + ' Changed modules? No problem, please message `$rem Letter Letter Letter...` into the channels to remove those roles.\n\n'
         + `**---------------------------------------| COMMANDS |---------------------------------------** \n\n`
         + "To use a command please type in `$(insert command name here)`. The commands available are the following: \n\n"
         + "**1. ask** - Useful if you would like to ask a simple yes/no question; or run a simple poll. \n\n"
