@@ -110,7 +110,7 @@ module.exports ={
                 + `${MATH36031Emoji} MATH36031 - Problem Solving by Computer \n\n`
                 + `${MATH38001Emoji} MATH38001 - Statistical Inference \n\n`
                 + `${MATH38141Emoji} MATH38141 - Regression Analysis \n\n`
-                + `${MATH38161Emoji} MATH38161 - Multivariate Statistics & Machiene Learning \n\n`
+                + `${MATH38161Emoji} MATH38161 - Multivariate Statistics & Machine Learning \n\n`
                 + `${MATH39511Emoji} MATH39511 - Actuarial Models`);
             
             let messageEmbed = await message.channel.send(embed);
