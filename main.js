@@ -42,7 +42,7 @@ client.on('ready', ()=>{
 
 client.on('guildMemberAdd', guildMember =>{
     
-
+    // UoM Maths 3rd Year (Unofficial)
     if (guildMember.guild.id === '769144748111167489'){
         
         let welcomeRole_3 = guildMember.guild.roles.cache.find(role => role.name === 'Student');
@@ -56,6 +56,7 @@ client.on('guildMemberAdd', guildMember =>{
         + ` have any more questions, please do not hesitate to get in touch with me on the server via pinging me on either:`
         + ` @Nikhil Aggarwal, @King👑; or sending me a direct message.`)
 
+    // UoM Maths 2nd Year (Unofficial)
     } else if (guildMember.guild.id === '786260531916832798'){
            
         let welcomeRole_2 = guildMember.guild.roles.cache.find(role => role.name === 'Student');
@@ -69,7 +70,8 @@ client.on('guildMemberAdd', guildMember =>{
         + ` have any more questions, please do not hesitate to get in touch with me on the server via pinging me on either:`
         + ` @Nikhil Aggarwal, @King👑; or sending me a direct message; or reaching out to any other`
         + ` available Moderator.`)
-
+    
+    // UoM Maths 1st Year (Unofficial)
     } else if (guildMember.guild.id === '855360915221774366'){
            
         let welcomeRole_1 = guildMember.guild.roles.cache.find(role => role.name === 'Student');
@@ -83,7 +85,8 @@ client.on('guildMemberAdd', guildMember =>{
         + ` have any more questions, please do not hesitate to get in touch with me on the server via pinging me on either:`
         + ` @Nikhil Aggarwal, @King👑; or sending me a direct message; or reaching out to any other`
         + ` available Moderator.`)
-
+    
+    // UoM Maths Foundation Year (Unofficial)
     } else if (guildMember.guild.id === '875621155510321183'){
 
         guildMember.guild.channels.cache.get('875621155959095334').send(`<@${guildMember.user.id}>`
@@ -93,8 +96,16 @@ client.on('guildMemberAdd', guildMember =>{
         + ` have any more questions, please do not hesitate to get in touch with me on the server via pinging me on either:`
         + ` @Nikhil Aggarwal, @King👑; or sending me a direct message; or reaching out to any other`
         + ` available Moderator.`)
+        
+    // UoM Maths - Connecting Students & Staff (Informal)
+    } else if (guildMember.guild.id === '892291417731391499'){
+
+        let welcomeRole = guildMember.guild.roles.cache.find(role=>role.name === 'Student');
+
+        guildMember.roles.add(welcomeRole);
 
     }
+    
 });
 
 client.on('message', message =>{
