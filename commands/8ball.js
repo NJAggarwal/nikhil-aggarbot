@@ -35,7 +35,6 @@ module.exports={
 
             if (ChannelIds.includes(message.channel.id)){
                 let messageEmbed = await message.channel.send(embedA);
-                message.delete()
             }
         } else if (eightBallNonCommittalList.includes(eightBallRandom)){
 
@@ -47,7 +46,6 @@ module.exports={
 
             if (ChannelIds.includes(message.channel.id)){
                 let messageEmbed = await message.channel.send(embedB);
-                message.delete()
             }
         } else if (eightBallNegativeList.includes(eightBallRandom)){
 
@@ -59,7 +57,6 @@ module.exports={
 
             if (ChannelIds.includes(message.channel.id)){
                 let messageEmbed = await message.channel.send(embedC);
-                message.delete()
             }
         }
     }
