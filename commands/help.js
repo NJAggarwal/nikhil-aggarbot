@@ -147,6 +147,9 @@ module.exports ={
             await message.channel.send(help_8ball)
             message.delete()
             }
+            if (messageArgs == 'rate'){
+            await message.channel.send(help_rate)
+            }
             if (messageArgs == 'play'){
             await message.channel.send(help_play)
             message.delete()
