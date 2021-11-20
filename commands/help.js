@@ -32,8 +32,9 @@ module.exports ={
         + "** Note: I would not recommend using this for serious decisions.** \n\n"
         + "**4. rps** - Play Rock Paper Scissors with Nikhil Aggarbot. \n\n"
         + "**5. 8ball** - Ask the 8-Ball a question. \n\n"
-        + "**6. play** - Join any voice channel and listen to music using Nikhil Aggarbot. \n\n"
-        + "**7. ttt** - Play tic tac toe with AI or a friend. \n\n"
+        + "**6. rate** - Creates a scoring embed. \n\n"
+        + "**7. play** - Join any voice channel and listen to music using Nikhil Aggarbot. \n\n"
+        + "**8. ttt** - Play tic tac toe with AI or a friend. \n\n"
         + "For more help on how to use a command, please type in `$help (insert command name here)`,"
         + " with a space between *help* and the *command name*")
 
@@ -88,6 +89,14 @@ module.exports ={
         + 'Ask the 8-Ball a question. \n\n'
         + '**Usage** \n'
         + 'To use this command, please type the following `$8ball (your question here)`. \n')
+
+        let help_rate = new Discord.MessageEmbed()
+        .setColor('#9B59B6')
+        .setTitle('**------------------------------| RATE COMMAND |------------------------------**')
+        .setDescription('\n\n **Description** \n'
+        + 'Creates a scoring embed. \n\n'
+        + '**Usage** \n'
+        + 'To use this command, please type the following `$rate (your statement here)`. \n')
 
         let help_play = new Discord.MessageEmbed()
         .setColor('#9B59B6')

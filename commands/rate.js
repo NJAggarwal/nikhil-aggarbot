@@ -13,16 +13,16 @@ module.exports={
 
         if (ChannelIds.includes(message.channel.id)){
             let messageEmbed = await message.channel.send(embed);
-            messageEmbed.react('\:one:');
-            messageEmbed.react('\:two:');
-            messageEmbed.react('\:three:');
-            messageEmbed.react('\:four:');
-            messageEmbed.react('\:five:');
-            messageEmbed.react('\:six:');
-            messageEmbed.react('\:seven:');
-            messageEmbed.react('\:eight:');
-            messageEmbed.react('\:nine:');
-            messageEmbed.react('\:100:');
+            messageEmbed.react('1️⃣');
+            messageEmbed.react('2️⃣');
+            messageEmbed.react('3️⃣');
+            messageEmbed.react('4️⃣');
+            messageEmbed.react('5️⃣');
+            messageEmbed.react('6️⃣');
+            messageEmbed.react('7️⃣');
+            messageEmbed.react('8️⃣');
+            messageEmbed.react('9️⃣');
+            messageEmbed.react('💯');
             message.delete()
         }
     }
