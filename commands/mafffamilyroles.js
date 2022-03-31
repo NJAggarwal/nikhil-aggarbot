@@ -26,7 +26,7 @@ module.exports ={
                      ${CSGOEmoji} csgo \n\n
                      ${MinecraftEmoji} Minecraft`)
 
-            let messageEmbed = await message.channel.send(embed);
+            await message.channel.send(embed);
             message.delete();
         }
     }
