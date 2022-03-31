@@ -18,13 +18,13 @@ module.exports ={
                 .setColor('#9B59B6')
                 .setTitle('Add roles like you would on Maths servers!')
                 .setDescription(
-                    `${BurritoEmoji} Burrito \n\n
-                     ${TimmiesEmoji} Timmies \n\n
-                     ${NeroEmoji} Nero \n\n
-                     ${MUDSSEmoji} MUDSS \n\n
-                     ${BadmintonEmoji} Badminton \n\n
-                     ${CSGOEmoji} csgo \n\n
-                     ${MinecraftEmoji} Minecraft`)
+                     `${BurritoEmoji} Burrito \n\n`
+                    + `${TimmiesEmoji} Timmies \n\n`
+                    + `${NeroEmoji} Nero \n\n`
+                    + `${MUDSSEmoji} MUDSS \n\n`
+                    + `${BadmintonEmoji} Badminton \n\n`
+                    + `${CSGOEmoji} csgo \n\n`
+                    + `${MinecraftEmoji} Minecraft`)
 
             await message.channel.send(embed);
             message.delete();
