@@ -16,8 +16,8 @@ module.exports ={
 
             let embed = new Discord.MessageEmbed()
                 .setColor('#9B59B6')
-                .setTitle('Add roles like you would on Maths servers!')
-                .setDescription(
+                .setTitle('`$giveme` to add a role or `$getrid` to remove a role')
+                .setDescription( 'e.g. `$giveme Burrito` adds the Burrito Bunch role \n\n'
                      `${BurritoEmoji} Burrito \n\n`
                     + `${TimmiesEmoji} Timmies \n\n`
                     + `${NeroEmoji} Nero \n\n`
