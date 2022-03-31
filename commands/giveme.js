@@ -10,15 +10,15 @@ module.exports ={
         let roleChoices = messageArgs.split(' ');
         const member = message.guild.members.cache.get(message.author.id);
 
-        if (message.guild.id === "894665765591068672"){
+        if (message.guild.id === '894665765591068672'){
 
             const RamanujanRoles = '957418273065021523';
 
-            const BurritoRole = message.guild.roles.cache.find(role=>role.name === "Burrito");
+            const BurritoRole = message.guild.roles.cache.find(role=>role.name === "Burrito Bunch");
             const TimmiesRole = message.guild.roles.cache.find(role=>role.name === "Timmies");
-            const NeroRole = message.guild.roles.cache.find(role=>role.name === "Nero");
+            const NeroRole = message.guild.roles.cache.find(role=>role.name === "Nero Enthusiasts");
             const MUDSSRole = message.guild.roles.cache.find(role=>role.name === "MUDSS");
-            const BadmintonRole = message.guild.roles.cache.find(role=>role.name === "Badminton");
+            const BadmintonRole = message.guild.roles.cache.find(role=>role.name === "Badminton Bitch");
             const CSGORole = message.guild.roles.cache.find(role=>role.name === "csgo");
             const MinecraftRole = message.guild.roles.cache.find(role=>role.name === "Minecraft");
 
@@ -75,6 +75,8 @@ module.exports ={
                     i = i + 1
                 } while (i < roleChoices.length + 1)
             }
+            await message.react('👌');
+            setTimeout(() => message.delete(), 500);
         }
     }
 }
