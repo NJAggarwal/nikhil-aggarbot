@@ -17,7 +17,7 @@ module.exports ={
             let embed = new Discord.MessageEmbed()
                 .setColor('#9B59B6')
                 .setTitle('Add roles like you would on Maths servers!')
-                .setdescription(
+                .setDescription(
                     `${BurritoEmoji} Burrito \n\n
                      ${TimmiesEmoji} Timmies \n\n
                      ${NeroEmoji} Nero \n\n
