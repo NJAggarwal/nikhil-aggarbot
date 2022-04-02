@@ -6,6 +6,7 @@ module.exports ={
 
         if (message.channel.id === '957418273065021523'){
 
+            const CinemaEmoji = '🎥';
             const BurritoEmoji = '🌯';
             const TimmiesEmoji = '♨️';
             const NeroEmoji = '☕';
@@ -18,6 +19,7 @@ module.exports ={
                 .setColor('#9B59B6')
                 .setTitle('`$giveme` to add a role or `$getrid` to remove a role')
                 .setDescription( 'e.g. `$giveme Burrito` adds the Burrito Bunch role \n\n'
+                    + `${CinemaEmoji} Cinema \n\n`
                     + `${BurritoEmoji} Burrito \n\n`
                     + `${TimmiesEmoji} Timmies \n\n`
                     + `${NeroEmoji} Nero \n\n`

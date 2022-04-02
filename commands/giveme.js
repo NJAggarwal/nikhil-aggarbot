@@ -14,6 +14,7 @@ module.exports ={
 
             const RamanujanRoles = '957418273065021523';
 
+            const CinemaRole = message.guild.roles.cache.find(role=>role.name === "Cinema Club");
             const BurritoRole = message.guild.roles.cache.find(role=>role.name === "Burrito Bunch");
             const TimmiesRole = message.guild.roles.cache.find(role=>role.name === "Timmies");
             const NeroRole = message.guild.roles.cache.find(role=>role.name === "Nero Enthusiasts");
@@ -25,6 +26,9 @@ module.exports ={
             if (message.channel.id === RamanujanRoles && command === 'giveme'){
                 let i = 0
                 do{
+                    if (roleChoices[i] === 'Cinema'){
+                        await member.roles.add(CinemaRole)
+                    }
                     if(roleChoices[i] === 'Burrito'){
                         await member.roles.add(BurritoRole)
                     }
@@ -51,6 +55,9 @@ module.exports ={
             } else if (message.channel.id === RamanujanRoles && command === 'getrid'){
                 let i = 0
                 do{
+                    if (roleChoices[i] === 'Cinema'){
+                        await member.roles.remove(CinemaRole)
+                    }
                     if(roleChoices[i] === 'Burrito'){
                         await member.roles.remove(BurritoRole)
                     }
