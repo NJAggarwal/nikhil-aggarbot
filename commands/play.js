@@ -124,7 +124,7 @@ const skip_song = (message, server_queue) => {
     if (!server_queue){
         return message.reply(`There are no songs in the queue!`);
     }
-    server_queue.connection.dispatcher.destroy();
+    server_queue.connection.dispatcher.end();
 }
 
 const leave_song = (message, server_queue) =>{
@@ -132,5 +132,5 @@ const leave_song = (message, server_queue) =>{
     if (!message.member.voice.channel) return message.reply('you need to be in a voice channel to use this command!');
     //Clear the entire song queue.
     server_queue.songs = [];
-    server_queue.connection.dispatcher.destroy();
+    server_queue.connection.dispatcher.end();
 }
