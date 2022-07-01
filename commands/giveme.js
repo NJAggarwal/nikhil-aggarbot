@@ -22,6 +22,7 @@ module.exports ={
             const BadmintonRole = message.guild.roles.cache.find(role=>role.name === "Badminton Bitch");
             const CSGORole = message.guild.roles.cache.find(role=>role.name === "csgo");
             const MinecraftRole = message.guild.roles.cache.find(role=>role.name === "Minecraft");
+            const NSFWRole = message.guild.roles.cache.find(role=>role.name === "NSFW");
 
             if (message.channel.id === RamanujanRoles && command === 'giveme'){
                 let i = 0
@@ -49,6 +50,9 @@ module.exports ={
                     }
                     if(roleChoices[i] === 'Minecraft'){
                         await member.roles.add(MinecraftRole)
+                    }
+                    if(roleChoices[i] === 'NSFW'){
+                        await member.roles.add(NSFWRole)
                     }
                     i = i + 1
                 } while (i < roleChoices.length + 1)
@@ -78,6 +82,9 @@ module.exports ={
                     }
                     if(roleChoices[i] === 'Minecraft'){
                         await member.roles.remove(MinecraftRole)
+                    }
+                    if(roleChoices[i] === 'NSFW'){
+                        await member.roles.remove(NSFWRole)
                     }
                     i = i + 1
                 } while (i < roleChoices.length + 1)

@@ -14,6 +14,7 @@ module.exports ={
             const BadmintonEmoji = '🏸';
             const CSGOEmoji = '🔫';
             const MinecraftEmoji = '🪓';
+            const NSFWEmoji = '😈';
 
             let embed = new Discord.MessageEmbed()
                 .setColor('#9B59B6')
@@ -26,7 +27,8 @@ module.exports ={
                     + `${MUDSSEmoji} MUDSS \n\n`
                     + `${BadmintonEmoji} Badminton \n\n`
                     + `${CSGOEmoji} csgo \n\n`
-                    + `${MinecraftEmoji} Minecraft`)
+                    + `${MinecraftEmoji} Minecraft \n\n`
+                    + `${NSFWEmoji} NSFW`)
 
             await message.channel.send(embed);
             message.delete();
